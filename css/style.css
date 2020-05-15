@@ -1,0 +1,202 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*Esto es para que la tipografía se vean bien*/
+*{
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale; }
+
+
+body {
+    padding: 48px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    }
+
+.background, body {
+    background: linear-gradient(rgba(0, 119, 179, 0.2) 1px, transparent 1px) repeat scroll left top / 8px 8px;
+}
+
+/* Text styles*/
+
+.title {
+    font-family: "triumpblack", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+}
+.title-two {
+    font-family: "Chivo", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+.title-three {
+    font-family: "Chivo", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+.title-four {
+    font-family: "Chivo", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+}
+.paragraph {    
+    font-family: "Chivo", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+/* Colors */
+
+/* Background colors */
+
+.green-transparent {
+    background-color: rgba(218, 247, 166, 0.3);
+}
+
+.yellow-transparent {     
+    background-color: rgba(255, 195, 0, 0.3);  
+}
+
+.pink-transparent {
+    background-color: rgba(255, 87, 51, 0.3);  
+}
+
+.red-transparent {
+    background-color: rgba(199, 0, 57, 0.3);
+}
+
+.brown-transparent {
+    background-color: rgba(183, 149, 11, 0.3); 
+}
+
+/* Heading styles*/
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p  {}
+
+/* Grids */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    padding-bottom: 96px
+}
+
+    @media (max-width: 720px)  {
+        .grid-container{ 
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 540px)  {
+        .grid-container{ 
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+/* box responsives*/
+.box-one {
+    grid-column: 1; 
+}
+    @media (max-width: 720px)  {
+        .box-one{ 
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+
+    @media (max-width: 540px)  {
+        .box-one{ 
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+.box-two {
+    grid-column: 2;
+}
+    @media (max-width: 720px)  {
+        .box-two{ 
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }   
+    }
+    
+    @media (max-width: 540px)  {
+        .box-two{ 
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+.box-three {
+    grid-column: 3;
+}
+    @media (max-width: 720px)  {
+        .box-three {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    @media (max-width: 540px)  {
+        .box-three{ 
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
