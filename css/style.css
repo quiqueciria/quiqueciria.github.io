@@ -45,7 +45,7 @@ body {
     background: linear-gradient(rgba(0, 4, 89, 0.99) 1px, #001f3f 1px) repeat scroll left top / 8px 8px;
 }
 
-/* Text styles*/
+/* Text styles *******************************/
 
 .title {
     font-family: "triumpblack", sans-serif;
@@ -78,6 +78,7 @@ body {
     line-height: 24px;  
 }
 
+/* Links *******************************/
 a {
     color: #00b44e;
     text-decoration: none;
@@ -301,6 +302,7 @@ p  {}
 
 .col-1-0-0 {
     grid-column: 1/2;
+    overflow: hidden;
 }
     @media (max-width: 720px)  {
         .col-1-0-0{ 
@@ -340,7 +342,15 @@ p  {}
     color: #02ff70;
 }
 
+/* Borders */
 
+.border-2 {
+    border-bottom: 1px solid;
+}
+
+img {
+  filter: opacity(40%);
+}
 
 
 
