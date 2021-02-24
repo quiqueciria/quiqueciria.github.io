@@ -71,18 +71,18 @@ body {
     font-size: 24px;
     line-height: 32px;
 }
-.paragraph {    
+.paragraph {
     font-family: "Chivo", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;  
+    line-height: 24px;
 }
 
-.code {    
+.code {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;  
+    line-height: 24px;
 }
 
 /* Links *******************************/
@@ -102,41 +102,48 @@ a {
 /* Colors *******************************/
 
 .green-light {
-    color: #02ff70;
+    color: rgba(2, 255, 112, 1) ;
 }
 
 .green-dark {
-    color: #034b20;
+  color: rgba(3, 75, 32, 1);
 }
 
 .blue-dark {
-    color: #001f3f;
+    color: rgba(0, 31, 63, 1);
 }
 
 /* Colors backgrounds *******************************/
 
-.green-transparent {
-    background-color: rgba(2, 255, 112, 0.1) ;
+.green-light-background {
+    background-color: rgba(2, 255, 112, 1);
 }
 
-.green {
-    background-color: #02ff70;
+.green-dark-background {
+    background-color: rgba(3, 75, 32, 1);
 }
 
-.yellow-transparent {     
-    background-color: rgba(255, 195, 0, 0.3);  
+.blue-dark-background {
+    background-color: rgba(0, 31, 63, 1);
+}
+.green-transparent-background {
+    background-color: rgba(2, 255, 112, 0.1);
 }
 
-.pink-transparent {
-    background-color: rgba(255, 87, 51, 0.3);  
+.yellow-transparent-background {
+    background-color: rgba(255, 195, 0, 0.3);
 }
 
-.red-transparent {
+.pink-transparent-background {
+    background-color: rgba(255, 87, 51, 0.3);
+}
+
+.red-transparent-background {
     background-color: rgba(199, 0, 57, 0.3);
 }
 
-.brown-transparent {
-    background-color: rgba(183, 149, 11, 0.3); 
+.brown-transparent-background {
+    background-color: rgba(183, 149, 11, 0.3);
 }
 
 
@@ -285,12 +292,12 @@ p  {}
     grid-auto-flow: row;
 }
     @media (max-width: 720px)  {
-        .grid-container{ 
+        .grid-container{
             grid-template-columns: repeat(2, 1fr);
         }
     }
     @media (max-width: 540px)  {
-        .grid-container{ 
+        .grid-container{
             grid-template-columns: 1fr;
         }
     }
@@ -325,12 +332,12 @@ p  {}
     grid-column: 1/4;
 }
     @media (max-width: 720px)  {
-        .col-1-1-1{ 
+        .col-1-1-1{
            grid-column: 1/3;
         }
     }
     @media (max-width: 540px)  {
-        .col-1-1-1{ 
+        .col-1-1-1{
            grid-column: 1/2;
         }
     }
@@ -339,12 +346,12 @@ p  {}
     grid-column: 2/4;
 }
     @media (max-width: 720px)  {
-        .col-0-1-1{ 
+        .col-0-1-1{
            grid-column: 1/3;
         }
     }
     @media (max-width: 540px)  {
-        .col-0-1-1{ 
+        .col-0-1-1{
            grid-column: 1/2;
         }
     }
@@ -353,12 +360,12 @@ p  {}
     grid-column: 3/4;
 }
     @media (max-width: 720px)  {
-        .col-0-0-1{ 
+        .col-0-0-1{
            grid-column: 2/3;
         }
     }
     @media (max-width: 540px)  {
-        .col-0-0-1{ 
+        .col-0-0-1{
            grid-column: 1/2;
         }
     }
@@ -367,12 +374,12 @@ p  {}
     grid-column: 1/3;
 }
     @media (max-width: 720px)  {
-        .col-1-1-0{ 
+        .col-1-1-0{
            grid-column: 1/3;
         }
     }
     @media (max-width: 540px)  {
-        .col-1-1-0{ 
+        .col-1-1-0{
            grid-column: 1/2;
         }
     }
@@ -382,12 +389,12 @@ p  {}
     overflow: hidden;
 }
     @media (max-width: 720px)  {
-        .col-1-0-0{ 
+        .col-1-0-0{
            grid-column: 1/2;
         }
     }
     @media (max-width: 540px)  {
-        .col-1-0-0{ 
+        .col-1-0-0{
            grid-column: 1/2;
         }
     }
@@ -396,12 +403,12 @@ p  {}
     grid-column: 2/3;
 }
     @media (max-width: 720px)  {
-        .col-0-1-0{ 
+        .col-0-1-0{
            grid-column: 1/2;
         }
     }
     @media (max-width: 540px)  {
-        .col-0-1-0{ 
+        .col-0-1-0{
            grid-column: 1/2;
         }
     }
@@ -419,26 +426,22 @@ p  {}
     color: #02ff70;
 }
 
+/* Boxes */
+.box {
+    border-radius: 2px;
+    height: 22px;
+    padding: 8px;
+}
 /* Borders */
 
-.border-2 {
+.border {
+    border: 1px solid;
+}
+
+.border-bottom {
     border-bottom: 1px solid;
 }
 
 img {
   filter: opacity(40%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
