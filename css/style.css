@@ -78,6 +78,14 @@ body {
     line-height: 24px;
 }
 
+.code {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Links *******************************/
 a {
     color: #00b44e;
     text-decoration: none;
@@ -94,32 +102,47 @@ a {
 /* Colors *******************************/
 
 .green-light {
-    color: #02ff70;
+    color: rgba(2, 255, 112, 1) ;
 }
 
 .green-dark {
-    color: #034b20;
+  color: rgba(3, 75, 32, 1);
 }
 
-/* Background colors *******************************/
-
-.green-transparent {
-    background-color: rgba(2, 255, 112, 0.1) ;
+.blue-dark {
+    color: rgba(0, 31, 63, 1);
 }
 
-.yellow-transparent {
+/* Colors backgrounds *******************************/
+
+.green-light-background {
+    background-color: rgba(2, 255, 112, 1);
+}
+
+.green-dark-background {
+    background-color: rgba(3, 75, 32, 1);
+}
+
+.blue-dark-background {
+    background-color: rgba(0, 31, 63, 1);
+}
+.green-transparent-background {
+    background-color: rgba(2, 255, 112, 0.1);
+}
+
+.yellow-transparent-background {
     background-color: rgba(255, 195, 0, 0.3);
 }
 
-.pink-transparent {
+.pink-transparent-background {
     background-color: rgba(255, 87, 51, 0.3);
 }
 
-.red-transparent {
+.red-transparent-background {
     background-color: rgba(199, 0, 57, 0.3);
 }
 
-.brown-transparent {
+.brown-transparent-background {
     background-color: rgba(183, 149, 11, 0.3);
 }
 
@@ -133,67 +156,131 @@ h5 {}
 h6 {}
 p  {}
 
-/* Spaces *******************************/
+/* Margins *******************************/
 
 
-.space-vert-bottom-8 {
+.margin-bottom-8 {
     margin-bottom: 8px;
 }
 
-.space-vert-top-8 {
+.margin-top-8 {
     margin-top: 8px;
 }
 
-.space-vert-left-8 {
+.margin-left-8 {
     margin-left: 8px;
 }
 
-.space-vert-bottom-16{
+.margin-bottom-16{
     margin-bottom: 16px;
 }
 
-.space-vert-top-16 {
+.margin-top-16 {
     margin-top: 16px;
 }
 
-.space-vert-left-16 {
+.margin-left-16 {
     margin-left: 16px;
 }
 
-.space-vert-bottom-24{
+.margin-bottom-24{
     margin-bottom: 24px;
 }
 
-.space-vert-top-24 {
+.margin-top-24 {
     margin-top: 24px;
 }
 
-.space-vert-left-24 {
+.margin-left-24 {
     margin-left: 24px;
 }
 
-.space-vert-bottom-32{
+.margin-bottom-32{
     margin-bottom: 32px;
 }
 
-.space-vert-top-32 {
+.margin-top-32 {
     margin-top: 32px;
 }
 
-.space-vert-left-32 {
+.margin-left-32 {
     margin-left: 32px;
 }
 
-.space-vert-bottom-40{
+.margin-bottom-40{
     margin-bottom: 40px;
 }
 
-.space-vert-top-40 {
+.margin-top-40 {
     margin-top: 40px;
 }
 
-.space-vert-left-40 {
+.margin-left-40 {
     margin-left: 40px;
+}
+
+
+/* Paddings *******************************/
+
+
+.padding-bottom-8 {
+    padding-bottom: 8px;
+}
+
+.padding-top-8 {
+    padding-top: 8px;
+}
+
+.padding-left-8 {
+    padding-left: 8px;
+}
+
+.padding-bottom-16{
+    padding-bottom: 16px;
+}
+
+.padding-top-16 {
+    padding-top: 16px;
+}
+
+.padding-left-16 {
+    padding-left: 16px;
+}
+
+.padding-bottom-24{
+    padding-bottom: 24px;
+}
+
+.padding-top-24 {
+    padding-top: 24px;
+}
+
+.padding-left-24 {
+    padding-left: 24px;
+}
+
+.padding-bottom-32{
+    padding-bottom: 32px;
+}
+
+.padding-top-32 {
+    padding-top: 32px;
+}
+
+.padding-left-32 {
+    padding-left: 32px;
+}
+
+.padding-bottom-40{
+    padding-bottom: 40px;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+.padding-left-40 {
+    padding-left: 40px;
 }
 
 
@@ -328,7 +415,7 @@ p  {}
     }
 
 
-/* Grid style */
+/* Grid styles */
 
 
 .grid-style {
@@ -338,6 +425,26 @@ p  {}
     height: 22px;
     padding: 8px;
     color: #02ff70;
+}
+
+/* Boxes */
+.box {
+    border-radius: 2px;
+    height: 22px;
+    padding: 8px;
+}
+/* Borders */
+
+.border {
+    border: 1px solid;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+
+img {
+  filter: opacity(40%);
 }
 
 .tachado {
