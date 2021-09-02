@@ -99,6 +99,21 @@ a {
     border-bottom: 2px solid #ffdb45;
     }
 
+/* buttons *******************************/
+
+.btn {
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    padding: 7px;
+
+}
+.btn:hover {
+    padding-bottom: 7px;
+    border-bottom: 1px solid;
+}
+
+
 /* Colors *******************************/
 
 .green-light {
